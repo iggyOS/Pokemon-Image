@@ -1,0 +1,153 @@
+body {
+background-color: #efeff0;
+font-family: monospace;
+color: white;
+margin: 1.5%;
+}
+
+img {
+max-width: 100%;
+width: 250px; /* Reduce the width to fit better within the new layout */
+height: 250px; /* Reduce the height to fit better within the new layout */
+margin: 20px;
+border-radius: 13px;
+padding: 5px;
+border: 3px solid #2e2e2e;
+box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+p {
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+color: white;
+}
+
+h1 {
+font-size: 50px;
+font-family: monospace;
+font-weight: bold;
+text-align: center;
+}
+
+.smallPage {
+background-color: #494949;
+border: none;
+color: white;
+border-radius: 10px; /* Add border-radius property */
+box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+padding-top: 1.6%;
+padding-bottom: 1.6%;
+padding-left: 1.6%;
+padding-right: 1.6%;
+}
+
+.icon {
+border: none;
+border-radius: none;
+box-shadow: none;
+height: 72px;
+width: 72px;
+top: 25px;
+right: 25px;
+position: absolute;
+}
+
+.buttons {
+margin: 3%;
+}
+
+button {
+background-color: #3d3d3d;
+border: 3px solid #2e2e2e;
+color: whitesmoke;
+padding: 20px 30px;
+text-align: center;
+display: inline-block;
+font-size: 30px;
+margin: 4px 2px;
+cursor: pointer;
+font-weight: bold;
+border-radius: 10px; /* Add border-radius property */
+transition: transform 0.4s; /* Add transition property for smooth animation */
+box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+}
+
+button:hover {
+background-color: #4b4b4b;
+transform: scale(1.1); /* Change the size when hovered */
+}
+
+button:active {
+background-color: #383838;
+transform: scale(1); /* Change the size when hovered */
+}
+
+#pokemonImage {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+max-height: 460px; /* Add this new rule to limit the height */
+}
+
+
+.row {
+display: flex;
+flex-wrap: wrap;
+margin: -5px; /* Add negative margin to compensate for padding */
+}
+
+.col {
+flex: 1;
+padding: 5px; /* Add padding to create gaps between columns */
+}
+
+label {
+border: none;
+color: whitesmoke;
+padding: 5px 10px;
+text-align: center;
+display: inline-block;
+font-size: 30px;
+margin: 4px 2px;
+font-weight: bold;
+}
+
+select {
+background-color: #3d3d3d;
+border: none;
+color: whitesmoke;
+padding: 5px 10px;
+text-align: center;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+font-weight: bold;
+border-radius: 10px; /* Add border-radius property */
+box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+}
+
+select:hover {
+background-color: #4b4b4b;
+}
+
+select:active {
+background-color: #383838;
+}
+    
+
+option {
+background-color: #3d3d3d;
+border: none;
+color: whitesmoke;
+padding: 5px 10px;
+text-align: center;
+display: inline-block;
+font-size: 25px;
+margin: 4px 2px;
+font-weight: bold;
+border-radius: 10px; /* Add border-radius property */
+box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+}

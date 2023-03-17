@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Generator!</title>
+  <link rel = "icon" href = "icon.ico" type = image/x-icon>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <img src="icon.png" class="icon">
+
+  <div class="smallPage">
+    
+    <h1>Pokemon Generator!</h1>
+    
+    <div class="buttons">
+      <label for="numberOfPokemon">Number of Pokemon:</label>
+      <select id="numberOfPokemon" name="numberOfPokemon">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <br><br>
+      <button onclick="showMultiplePokemon()">Show Pokemon</button>
+    </div>
+
+    <br><br><br><br>
+    <div id="pokemonImage"></div>
+  </div>
+  
+
+  <audio id="audio">
+    <source src="show.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
