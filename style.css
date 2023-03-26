@@ -65,7 +65,7 @@ padding: 20px 30px;
 text-align: center;
 display: inline-block;
 font-size: 30px;
-margin: 4px 2px;
+margin: 4px 12px;
 cursor: pointer;
 font-weight: bold;
 border-radius: 10px; /* Add border-radius property */
@@ -150,4 +150,19 @@ margin: 4px 2px;
 font-weight: bold;
 border-radius: 10px; /* Add border-radius property */
 box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); /* Add box-shadow property */
+}
+
+.showdownNamesContainer {
+position: relative;
+}
+
+#showdownNames {
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+color: #5c5c5c;
+font-family: monospace;
+position: absolute;
+top: 150px;
+right: 85px;
 }

@@ -13,7 +13,7 @@
   <div class="smallPage">
     
     <h1>Pokemon Generator!</h1>
-    
+
     <div class="buttons">
       <label for="numberOfPokemon">Number of Pokemon:</label>
       <select id="numberOfPokemon" name="numberOfPokemon">
@@ -26,12 +26,18 @@
       </select>
       <br><br>
       <button onclick="showMultiplePokemon()">Show Pokemon</button>
+      <button onclick="showdown()">Copy Showdown</button>
+
+      <div class = showdownNamesContainer id="showdownNames"></div>
+
     </div>
 
     <br><br><br><br>
     <div id="pokemonImage"></div>
+
+
   </div>
-  
+
 
   <audio id="audio">
     <source src="show.mp3" type="audio/mpeg">

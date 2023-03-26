@@ -1012,6 +1012,7 @@ var pokemonImages = [
 "1010 Iron Leaves.png"
 
 ];
+
 function playAudio() {
   var audio = document.getElementById("audio");
   audio.play();
@@ -1079,4 +1080,37 @@ function showMultiplePokemon() {
     // Add the colDiv element to the rowDiv element
     rowDiv.appendChild(colDiv);
   }
+}
+
+function showdown() {
+  var names = "";
+  var elements = document.querySelectorAll("#pokemonImage p");
+  for (var i = 0; i < elements.length; i++) {
+    var pokemonName = elements[i].textContent.split(" - ")[1]; // extract the name after removing the number
+    names += pokemonName + "<br><br>"; // add the name with an extra line break
+  }
+  document.getElementById("showdownNames").innerHTML = names;
+
+
+  // Get the showdown section
+  var showdownSection = document.getElementById("showdownNames");
+
+  // Create a temporary textarea element to hold the showdown section text
+  var tempTextarea = document.createElement("textarea");
+  tempTextarea.value = showdownSection.innerText;
+
+  // Append the textarea element to the DOM
+  document.body.appendChild(tempTextarea);
+
+  // Select the text in the textarea
+  tempTextarea.select();
+
+  // Copy the text to the clipboard
+  document.execCommand("copy");
+
+  // Remove the temporary textarea element
+  tempTextarea.remove();
+
+  // Show a message to the user
+  alert("All Showdown names copied to clipboard!\nYou can now import these into Showdown");
 }
